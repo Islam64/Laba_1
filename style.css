@@ -1,0 +1,30 @@
+body {
+  padding-top: 100px;
+  font: 2 Arial;
+}
+.box {
+  width: 500px;
+  margin: 0 auto;
+  font-size: 0;
+  text-align: center;
+}
+.box span {
+  position: relative;
+  display: inline-block;
+  width: 90px;
+  height: 30px;
+  font-size: 14px;
+  line-height: 30px;
+  background: linear-gradient(to bottom, #DEDEDE 0%, #BFBFBF 50%, #DEDEDE 100%);
+  clip-path: polygon(93% 0,100% 50%, 93% 100%, 0% 100%,7% 50%, 0% 0%);
+}
+.box *:first-child{
+  clip-path: polygon(93% 0,100% 50%, 93% 100%, 0% 100%, 0% 0%);
+}
+.box *:last-child{
+  clip-path: polygon(100% 0,100% 100%, 0% 100%, 7% 50%, 0% 0%);
+}
+span:hover {
+	background: linear-gradient(to bottom, #AEE188 0%, #66C620 50%, #AEE188 100%);
+  clip-path: polygon(93% 0,100% 50%, 93% 100%, 0% 100%,7% 50%, 0% 0%);;
+}
